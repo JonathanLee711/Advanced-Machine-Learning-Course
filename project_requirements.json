@@ -1,0 +1,38 @@
+{
+  "task": "multi-step moisture prediction",
+  "data_file": "data/combined_result2.0.xlsx",
+  "record_count_required_by_requirements": 46377,
+  "window": 16,
+  "horizon": 4,
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15,
+    "method": "chronological row order"
+  },
+  "features": "10 loose-conditioning process features plus historical target",
+  "target": "叶丝膨胀干燥_HT入口叶丝含水率",
+  "models": [
+    "MLP",
+    "CNN",
+    "LSTM",
+    "GRU",
+    "BiLSTM",
+    "CNN-LSTM",
+    "Proposed"
+  ],
+  "proposed_components": [
+    "multi-scale CNN",
+    "BiLSTM",
+    "multi-head attention",
+    "residual fusion",
+    "auxiliary loss"
+  ],
+  "ablations": [
+    "Full Model",
+    "w/o Multi-scale CNN",
+    "w/o Attention",
+    "w/o Residual",
+    "w/o Auxiliary Loss"
+  ]
+}

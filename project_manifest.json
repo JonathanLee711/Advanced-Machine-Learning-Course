@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-05-21T10:16:32",
+  "source_root": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code",
+  "package_dir": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured",
+  "copied": {
+    "src": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured\\src",
+    "data": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured\\data\\combined_result2.0.xlsx",
+    "results": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured\\results",
+    "figures": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured\\figures",
+    "outputs": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured\\outputs",
+    "docs": "F:\\0 HUST\\[3] Curriculum\\高级机器学习\\作业\\code\\moisture_prediction_project_configured\\docs"
+  },
+  "entrypoint": "src/run_experiments.py",
+  "default_command": ".venv\\Scripts\\python.exe src\\run_experiments.py",
+  "dependency_file": "requirements.txt"
+}
