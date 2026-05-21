@@ -1,6 +1,8 @@
 {
   "task": "multi-step moisture prediction",
-  "data_file": "data/combined_result2.0.xlsx",
+  "code_default_data_file": "data/combined_result2.0.xlsx",
+  "data_file_present_in_repository": false,
+  "data_note": "The Excel dataset is not included in the current repository. See input_data/README.md, then place the dataset at data/combined_result2.0.xlsx or pass --data to src/run_experiments.py.",
   "record_count_required_by_requirements": 46377,
   "window": 16,
   "horizon": 4,
@@ -12,6 +14,8 @@
   },
   "features": "10 loose-conditioning process features plus historical target",
   "target": "叶丝膨胀干燥_HT入口叶丝含水率",
+  "code_entrypoint": "src/run_experiments.py",
+  "model_definitions": "src/models.py",
   "models": [
     "MLP",
     "CNN",
@@ -34,5 +38,23 @@
     "w/o Attention",
     "w/o Residual",
     "w/o Auxiliary Loss"
+  ],
+  "existing_outputs_in_repository": {
+    "result_tables": "output/results",
+    "figures": "output/figures"
+  },
+  "new_run_output_locations": {
+    "result_tables": "results",
+    "figures": "figures",
+    "checkpoints_optional": "checkpoints"
+  },
+  "documentation_files": [
+    "README.txt",
+    "input_data/README.md",
+    "docs/实验说明与论文使用指南.docx"
+  ],
+  "missing_files_referenced_by_previous_docs": [
+    "project_manifest.json",
+    "docs/project_completeness_check.md"
   ]
 }
